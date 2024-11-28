@@ -554,25 +554,16 @@ video {
   display: none;
 }
 
-<<<<<<< HEAD
+.w-full {
+  width: 100%;
+}
+
 .bg-bg-body {
   background-image: url('../images/background-img.png');
-=======
-.bg-\[url\(\'images\/background-img\.png\'\)\] {
-  background-image: url('images/background-img.png');
 }
 
-.bg-\[url\(\'\.images\/background-img\.png\'\)\] {
-  background-image: url('.images/background-img.png');
-}
-
-.bg-\[url\(\'\.\/images\/background-img\.png\'\)\] {
-  background-image: url('./images/background-img.png');
-}
-
-.bg-cover {
-  background-size: cover;
->>>>>>> 79243f8914d64e042461e8642085504f71f2435b
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .text-\[50px\] {
