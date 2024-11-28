@@ -1,0 +1,15 @@
+{
+  "name": "tp-hasard404",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000h\u0000a\u0000s\u0000a\u0000r\u00004\u00000\u00004\u0000\r\u0000 \u0000",
+  "main": "index.js",
+ "scripts": {
+  "build:css": "tailwindcss build -i ./css/input.css -o ./css/output.css --watch"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}
