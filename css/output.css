@@ -554,8 +554,25 @@ video {
   display: none;
 }
 
+<<<<<<< HEAD
 .bg-bg-body {
   background-image: url('../images/background-img.png');
+=======
+.bg-\[url\(\'images\/background-img\.png\'\)\] {
+  background-image: url('images/background-img.png');
+}
+
+.bg-\[url\(\'\.images\/background-img\.png\'\)\] {
+  background-image: url('.images/background-img.png');
+}
+
+.bg-\[url\(\'\.\/images\/background-img\.png\'\)\] {
+  background-image: url('./images/background-img.png');
+}
+
+.bg-cover {
+  background-size: cover;
+>>>>>>> 79243f8914d64e042461e8642085504f71f2435b
 }
 
 .text-\[50px\] {
