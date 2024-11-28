@@ -554,6 +554,14 @@ video {
   display: none;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -572,6 +580,10 @@ video {
 
 .w-\[60\%\] {
   width: 60%;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -627,6 +639,14 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-lg {
