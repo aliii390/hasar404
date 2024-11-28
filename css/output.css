@@ -564,6 +564,10 @@ video {
   display: flex;
 }
 
+.h-\[10\%\]{
+  height: 10%;
+}
+
 .h-\[100px\]{
   height: 100px;
 }
@@ -574,66 +578,6 @@ video {
 
 .h-\[700px\]{
   height: 700px;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[10\]{
-  height: 10;
-}
-
-.h-\[100\]{
-  height: 100;
-}
-
-.h-\[100\%\]{
-  height: 100%;
-}
-
-.h-\[10\%\]{
-  height: 10%;
-}
-
-.h-\[0\%\]{
-  height: 0%;
-}
-
-.h-\[50\%\]{
-  height: 50%;
-}
-
-.h-\[50\]{
-  height: 50;
-}
-
-.h-\[5\%\]{
-  height: 5%;
-}
-
-.h-\[\%\]{
-  height: %;
-}
-
-.h-\[8\%\]{
-  height: 8%;
-}
-
-.h-\[8\B0\%\]{
-  height: 8°%;
-}
-
-.h-\[80\%\]{
-  height: 80%;
-}
-
-.h-\[2\%\]{
-  height: 2%;
-}
-
-.h-\[20\%\]{
-  height: 20%;
 }
 
 .h-\[90\%\]{
@@ -656,54 +600,6 @@ video {
   width: 50%;
 }
 
-.w-\[\]{
-  width: ;
-}
-
-.w-\[50\]{
-  width: 50;
-}
-
-.w-\[5\]{
-  width: 5;
-}
-
-.w-\[1\]{
-  width: 1;
-}
-
-.w-\[10\]{
-  width: 10;
-}
-
-.w-\[100\]{
-  width: 100;
-}
-
-.w-\[100\%\]{
-  width: 100%;
-}
-
-.w-5{
-  width: 1.25rem;
-}
-
-.w-1{
-  width: 0.25rem;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
-.w-\[10\%\]{
-  width: 10%;
-}
-
-.w-\[0\%\]{
-  width: 0%;
-}
-
 .w-\[70\%\]{
   width: 70%;
 }
@@ -716,10 +612,6 @@ video {
   align-items: center;
 }
 
-.justify-end{
-  justify-content: flex-end;
-}
-
 .justify-center{
   justify-content: center;
 }
@@ -728,16 +620,12 @@ video {
   gap: 2.5rem;
 }
 
-.gap-8{
-  gap: 2rem;
-}
-
-.gap-2{
-  gap: 0.5rem;
-}
-
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .rounded-\[10px\]{
@@ -760,6 +648,11 @@ video {
   border-width: 0.1px;
 }
 
+.border-stroke-color{
+  --tw-border-opacity: 1;
+  border-color: rgba(130, 68, 255, var(--tw-border-opacity, 1));
+}
+
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
@@ -767,6 +660,10 @@ video {
 
 .border-opacity-\[20\%\]{
   --tw-border-opacity: 20%;
+}
+
+.border-opacity-\[50\%\]{
+  --tw-border-opacity: 50%;
 }
 
 .bg-\[\#151515\]{
@@ -805,8 +702,8 @@ video {
   background-repeat: no-repeat;
 }
 
-.p-1{
-  padding: 0.25rem;
+.p-2{
+  padding: 0.5rem;
 }
 
 .p-3{
@@ -817,20 +714,12 @@ video {
   padding: 2.25rem;
 }
 
-.p-2{
-  padding: 0.5rem;
-}
-
 .pt-5{
   padding-top: 1.25rem;
 }
 
 .pt-\[6rem\]{
   padding-top: 6rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
 }
 
 .text-center{
@@ -848,11 +737,6 @@ video {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .font-bold{
@@ -893,6 +777,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-stroke-color-opacity{
+  --tw-shadow-color: rgba(130,68,255, 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .blur-\[0\.5px\]{
   --tw-blur: blur(0.5px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -900,44 +789,6 @@ video {
 
 .\[text-shadow\:_0_14px_20px_rgb\(0_0_0_\/_0\.8\)\]{
   text-shadow: 0 14px 20px rgb(0 0 0 / 0.8);
-}
-
-.placeholder\:text-xs::-moz-placeholder{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.placeholder\:text-xs::placeholder{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.placeholder\:text-xl::-moz-placeholder{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.placeholder\:text-xl::placeholder{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.placeholder\:text-lg::-moz-placeholder{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.placeholder\:text-lg::placeholder{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.placeholder\:text-\[12px\]::-moz-placeholder{
-  font-size: 12px;
-}
-
-.placeholder\:text-\[12px\]::placeholder{
-  font-size: 12px;
 }
 
 .placeholder\:text-\[15px\]::-moz-placeholder{
@@ -954,37 +805,5 @@ video {
 
 .placeholder\:italic::placeholder{
   font-style: italic;
-}
-
-.placeholder\:text-\[\]::-moz-placeholder{
-  color: ;
-}
-
-.placeholder\:text-\[\]::placeholder{
-  color: ;
-}
-
-.placeholder\:text-\[1\]::-moz-placeholder{
-  color: 1;
-}
-
-.placeholder\:text-\[1\]::placeholder{
-  color: 1;
-}
-
-.placeholder\:text-\[12\]::-moz-placeholder{
-  color: 12;
-}
-
-.placeholder\:text-\[12\]::placeholder{
-  color: 12;
-}
-
-.placeholder\:text-\[12p\]::-moz-placeholder{
-  color: 12p;
-}
-
-.placeholder\:text-\[12p\]::placeholder{
-  color: 12p;
 }
 

@@ -16,7 +16,9 @@ module.exports = {
         "box-colors": "rgb(121,117,131)",
         "box-gradient":
           "linear-gradient(71deg, rgba(121,117,131,0.4654236694677871) 0%, rgba(54,53,103,0.32816876750700286) 100%)",
-          "color-button": "rgba(21,21,21)"
+          "color-button": "rgba(21,21,21)",
+          "stroke-color": "rgba(130,68,255)",
+          "stroke-color-opacity": "rgba(130,68,255, 0.3)",
       },
     },
   },
