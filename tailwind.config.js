@@ -4,7 +4,11 @@ module.exports = {
     "index.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'bg-body': "url('../images/background-img.png')",
+      }
+    },
   },
   plugins: [],
 }

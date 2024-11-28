@@ -554,20 +554,28 @@ video {
   display: none;
 }
 
-.bg-\[url\(\'images\/background-img\.png\'\)\] {
-  background-image: url('images/background-img.png');
-}
-
-.bg-\[url\(\'\.images\/background-img\.png\'\)\] {
-  background-image: url('.images/background-img.png');
-}
-
-.bg-\[url\(\'\.\/images\/background-img\.png\'\)\] {
-  background-image: url('./images/background-img.png');
+.bg-bg-body {
+  background-image: url('../images/background-img.png');
 }
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-auto {
+  background-size: auto;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .text-\[50px\] {
@@ -582,4 +590,9 @@ video {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
