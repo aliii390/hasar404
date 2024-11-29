@@ -628,6 +628,10 @@ video {
   justify-content: center;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .gap-10{
   gap: 2.5rem;
 }
@@ -644,13 +648,6 @@ video {
   gap: 5px;
 }
 
-<<<<<<< HEAD
-=======
-.gap-1{
-  gap: 0.25rem;
-}
-
->>>>>>> e26b3a844c2dfe49307969a798ee1b6079dadb56
 .rounded-\[10px\]{
   border-radius: 10px;
 }

@@ -1,6 +1,6 @@
 const inputNom = document.getElementById("studentInput");
 const btnEntrez = document.getElementById("enter");
-const listeNom = document.getElementById("listOl");
+const listeNom = document.getElementById("list");
 // const listeLi = document.getElementById("listLi")
 // code ALI
 let tableau = [];
@@ -21,7 +21,7 @@ function handleSubmit() {
   newLi.innerText = textt;
 
 
-   listeNom.appendChild(newLi);
+ listeNom.appendChild(newLi);
   inputNom.value = '';
 
   
@@ -29,8 +29,6 @@ function handleSubmit() {
   console.log(tableau);
   
 }
-
-
 // FIN DE CODE ALI
 
 
