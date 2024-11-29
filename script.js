@@ -8,25 +8,14 @@ buttonForGenerate.addEventListener("click", handleOnClickAleatoirePlacement)
 
 
 function handleOnClickAleatoirePlacement(){   
-
     const listeRandomiser = [...maListe];
-   
-    
-
     for(let i = listeRandomiser.length - 1; i > 0; i--){
         let j = Math.floor(Math.random() * (i - 1));
-        [listeRandomiser[i], listeRandomiser[j]] = [listeRandomiser[j], listeRandomiser[i]]
-        
-        
+        [listeRandomiser[i], listeRandomiser[j]] = [listeRandomiser[j], listeRandomiser[i]]   
     }
-    
-    
-
     placement(listeRandomiser);
 
 }
-
-
 function placement(listeRandomiser){
     mesPlace.forEach((place, index) => {
         place.innerHTML = listeRandomiser[index];
