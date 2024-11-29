@@ -572,6 +572,10 @@ video {
   height: 100px;
 }
 
+.h-\[40px\]{
+  height: 40px;
+}
+
 .h-\[600px\]{
   height: 600px;
 }
@@ -584,50 +588,6 @@ video {
   height: 90%;
 }
 
-.h-\[16\%\]{
-  height: 16%;
-}
-
-.h-\[5\%\]{
-  height: 5%;
-}
-
-.h-\[\%\]{
-  height: %;
-}
-
-.h-\[7\%\]{
-  height: 7%;
-}
-
-.h-\[6\%\]{
-  height: 6%;
-}
-
-.h-\[3\%\]{
-  height: 3%;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[50px\]{
-  height: 50px;
-}
-
-.h-\[40px\]{
-  height: 40px;
-}
-
-.h-\[45px\]{
-  height: 45px;
-}
-
-.h-\[4px\]{
-  height: 4px;
-}
-
 .w-\[100px\]{
   width: 100px;
 }
@@ -636,76 +596,24 @@ video {
   width: 14%;
 }
 
-.w-\[50\%\]{
-  width: 50%;
+.w-\[400px\]{
+  width: 400px;
 }
 
-.w-\[500px\]{
-  width: 500px;
+.w-\[50\%\]{
+  width: 50%;
 }
 
 .w-\[70\%\]{
   width: 70%;
 }
 
-.w-\[400px\]{
-  width: 400px;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[2\]{
-  width: 2;
-}
-
-.w-\[120\]{
-  width: 120;
-}
-
-.w-\[120px\]{
-  width: 120px;
-}
-
-.w-10{
-  width: 2.5rem;
+.w-\[79\%\]{
+  width: 79%;
 }
 
 .w-full{
   width: 100%;
-}
-
-.w-\[1000\%\]{
-  width: 1000%;
-}
-
-.w-\[100\%\]{
-  width: 100%;
-}
-
-.w-\[0\%\]{
-  width: 0%;
-}
-
-.w-\[7\%\]{
-  width: 7%;
-}
-
-.w-\[73\%\]{
-  width: 73%;
-}
-
-.w-\[75\%\]{
-  width: 75%;
-}
-
-.w-\[77\%\]{
-  width: 77%;
-}
-
-.w-\[79\%\]{
-  width: 79%;
 }
 
 .flex-col{
@@ -732,24 +640,8 @@ video {
   gap: 2rem;
 }
 
-.gap-6{
-  gap: 1.5rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
-}
-
-.gap-\[\]{
-  gap: ;
-}
-
 .gap-\[5px\]{
   gap: 5px;
-}
-
-.gap-\[1px\]{
-  gap: 1px;
 }
 
 .rounded-\[10px\]{
@@ -838,26 +730,6 @@ video {
   padding: 2.25rem;
 }
 
-.p-\[\]{
-  padding: ;
-}
-
-.p-\[20px\]{
-  padding: 20px;
-}
-
-.p-\[px\]{
-  padding: px;
-}
-
-.p-\[30px\]{
-  padding: 30px;
-}
-
-.p-4{
-  padding: 1rem;
-}
-
 .pt-5{
   padding-top: 1.25rem;
 }
@@ -933,14 +805,6 @@ video {
 
 .\[text-shadow\:_0_14px_20px_rgb\(0_0_0_\/_0\.8\)\]{
   text-shadow: 0 14px 20px rgb(0 0 0 / 0.8);
-}
-
-.placeholder\:font-title::-moz-placeholder{
-  font-family: Poppins, sans-serif;
-}
-
-.placeholder\:font-title::placeholder{
-  font-family: Poppins, sans-serif;
 }
 
 .placeholder\:text-\[15px\]::-moz-placeholder{
