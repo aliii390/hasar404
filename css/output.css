@@ -604,6 +604,18 @@ video {
   width: 70%;
 }
 
+.w-\[75\%\]{
+  width: 75%;
+}
+
+.w-\[5\%\]{
+  width: 5%;
+}
+
+.w-\[85\%\]{
+  width: 85%;
+}
+
 .flex-col{
   flex-direction: column;
 }

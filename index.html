@@ -21,7 +21,7 @@
     <main class="w-100 h-[600px] flex justify-center gap-10 items-center pt-[6rem]">
       <!-- Contient absolument tout le site -->
 
-      <div class="w-[50%] justify-center">
+      <div id="placeStudent" class="w-[50%] justify-center">
         <div class="flex pt-5 gap-8">
           <!--  -->
 
@@ -122,6 +122,7 @@
           </article>
         </div>
       </div>
+      
 
          <!-- Partie qui contient la liste -->       <article
       class="w-[300px] flex-col justify-center items-center flex shadow-xl h-[700px] border-opacity-[20%] border-white border-[0.1px] rounded-[10px] bg-gradient-to-r from-box-premiere-couleur to-box-deuxieme-couleur opacity-[1] blur-[0.5px]">
@@ -129,6 +130,7 @@
     <ol class="flex flex-col gap-3 items-center">
   <li></li>
     </ol>
+
     </div>
     <div class="w-[70%] h-[10%] flex flex-col">
 <input class="p-2 rounded-[15px] border-[0.1px] border-opacity-[50%] shadow-xl shadow-stroke-color-opacity border-stroke-color placeholder:text-[15px] placeholder:italic bg-color-button placeholder-white text-white" id="studentInput" maxlength="11" placeholder="Noter un nom" type="text">
@@ -138,10 +140,11 @@
       <!-- Div qui contient le tableau et la liste -->
     </main>
 
+
      <!-- partie btn générer -->
-     <div class="flex justify-center p-9">
+     <div class="flex justify-center p-9 w-[85%]">
       <a
-        href="#"
+        href="#" id="buttonGenerer"
         class="font-title font-bold border-[0.1px] border-opacity-[50%] shadow-xl shadow-stroke-color-opacity border-stroke-color text-white bg-[#151515] p-3 w-[14%] rounded-[40px] text-center"
         >Génerer</a>
     </div>
