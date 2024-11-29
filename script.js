@@ -1,6 +1,5 @@
 const inputNom = document.getElementById("studentInput");
 const btnEntrez = document.getElementById("enter");
-<<<<<<< HEAD
 const listeNom = document.getElementById("listOl");
 // const listeLi = document.getElementById("listLi")
 // code ALI
