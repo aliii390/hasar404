@@ -9,9 +9,6 @@ let mesPlace = document.querySelectorAll("#placeStudent > div > article > p")
 let count = 0;
 
 
-console.log(listeNom);
-
-
 btnEntrez.addEventListener("click", handleSubmit);
 buttonForGenerate.addEventListener("click", handleOnClickAleatoirePlacement)
 
