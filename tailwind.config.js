@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: [
+    "index.html",
+    "script.js",
+    "add-shemma.html",
+    "add.js"
+  ],
   theme: {
     extend: {
       backgroundImage: {

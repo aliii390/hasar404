@@ -7,13 +7,18 @@ const btnRemove = document.getElementById("btnRemove")
 // const listeLi = document.getElementById("listLi")
 // code ALI
 let tableau = [];
-const buttonForGenerate = document.getElementById("buttonGenerer")
-let mesPlace = document.querySelectorAll("#placeStudent > div > article > p")
+const buttonForGenerate = document.getElementById("buttonGenerer");
+let mesPlace = document.querySelectorAll("#placeStudent > div > article > p");
 let count = 0;
+let addDiv = document.getElementById("addDiv");
+let divPourAdd = document.getElementById("placeStudent");
+let divTarget;
 
 
 
 btnEntrez.addEventListener("click", handleSubmit);
+buttonForGenerate.addEventListener("click", handleOnClickAleatoirePlacement);
+// addDiv.addEventListener("click", handleClickAddDiv);
 buttonForGenerate.addEventListener("click", handleOnClickAleatoirePlacement)
 
 
@@ -24,6 +29,7 @@ buttonForGenerate.addEventListener("click", handleOnClickAleatoirePlacement)
 
  function handleRemove(){
   listeNom.removeChild(listeNom.lastChild)
+
  }
 
 
@@ -31,21 +37,17 @@ buttonForGenerate.addEventListener("click", handleOnClickAleatoirePlacement)
 
 
 function handleSubmit() {
-
   let textt = inputNom.value;
 
   tableau.push(textt);
 
   let newLi = document.createElement("li");
   newLi.innerText = textt;
-  
 
- listeNom.appendChild(newLi);
-  inputNom.value = '';
-  
+  listeNom.appendChild(newLi);
+  inputNom.value = "";
 
   console.log(tableau);
-  
 }
 // FIN DE CODE ALI
 
@@ -60,23 +62,25 @@ function handleSubmit() {
 
 
 
-function handleOnClickAleatoirePlacement(){   
+
+
+
+function handleOnClickAleatoirePlacement() {
   console.log("test");
-  
-    const listeRandomiser = [...tableau];
-    for(let i = listeRandomiser.length - 1; i > 0; i--){
-        let j = Math.floor(Math.random() * (i - 1));
-        [listeRandomiser[i], listeRandomiser[j]] = [listeRandomiser[j], listeRandomiser[i]]   
-    }
-    
-    placement(listeRandomiser);
 
+  const listeRandomiser = [...tableau];
+  for (let i = listeRandomiser.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i - 1));
+    [listeRandomiser[i], listeRandomiser[j]] = [
+      listeRandomiser[j],
+      listeRandomiser[i],
+    ];
+  }
+
+  placement(listeRandomiser);
 }
-function placement(listeRandomiser){
-    mesPlace.forEach((place, index) => {
-        place.innerHTML = listeRandomiser[index];
-        
-    })
+function placement(listeRandomiser) {
+  mesPlace.forEach((place, index) => {
+    place.innerHTML = listeRandomiser[index];
+  });
 }
-
-
