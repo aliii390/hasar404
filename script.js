@@ -83,7 +83,7 @@ newDiv.appendChild(newP)
 
 function handlePressMoveDiv(newDiv) {
   divTarget = newDiv.target;
-
+  const container = document.getElementById("placeStudent");
   let shiftX = event.clientX - divTarget.getBoundingClientRect().left;
   let shiftY = event.clientY - divTarget.getBoundingClientRect().top;
 
@@ -91,8 +91,22 @@ function handlePressMoveDiv(newDiv) {
   document.addEventListener("mouseup", handleMouseUp);
 
   function handleMouseMove(event) {
-    divTarget.style.left = event.clientX - divTarget.offsetWidth / 2 + "px"
-    divTarget.style.top = event.clientY - divTarget.offsetWidth / 2 + "px"
+    let newLeft =
+      event.clientX - shiftX - container.getBoundingClientRect().left;
+    let newTop = event.clientY - shiftY - container.getBoundingClientRect().top;
+
+    // Ensure the new position is within the container bounds
+    newLeft = Math.max(
+      0,
+      Math.min(newLeft, container.clientWidth - divTarget.clientWidth)
+    );
+    newTop = Math.max(
+      0,
+      Math.min(newTop, container.clientHeight - divTarget.clientHeight)
+    );
+
+    divTarget.style.left = newLeft + "px";
+    divTarget.style.top = newTop + "px";
   }
 
   function handleMouseUp() {
