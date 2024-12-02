@@ -120,3 +120,23 @@ function handlePressMoveDiv(newDiv) {
     document.removeEventListener("mouseup", handleMouseUp);
   }
 }
+
+
+
+
+
+
+
+
+// function pour remove les li grace au btn test
+
+const btnTest = document.getElementById("btnTest");
+btnTest.addEventListener("click", handleRemove);
+
+function handleRemove(){
+ listeNom.removeChild(listeNom.lastChild)
+
+}
+
+
+// fin du code pour remove
