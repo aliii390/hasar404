@@ -1,83 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HASARD404</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="icon" type="images/ico" href="images/H.ico" />
+    <script defer src="script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HASARD404</title>
-  <link rel="stylesheet" href="./css/output.css" />
-  <link rel="icon" type="images/ico" href="images/H.ico" />
-  <script defer src="script.js"></script>
-</head>
-
-<body class="bg-bg-body bg-cover bg-no-repeat">
-  <header class="flex w-[70%] mt-[4%] items-center">
-    <div class="flex ml-4 gap-3 w-[40%]">
-        <a class="font-title font-bold border-[0.1px] border-opacity-[50%] shadow-xl hover:stroke-white hover:border-white shadow-stroke-color-opacity border-stroke-color text-white bg-gradient-to-r from-box-premiere-couleur to-box-deuxieme-couleur p-3 rounded-[40px] text-center" href="index.html">Promotion 4</a>
-        <a class="font-title font-bold border-[0.1px] border-opacity-[50%] shadow-xl hover:stroke-white hover:border-white shadow-stroke-color-opacity border-white text-white bg-gradient-to-r from-box-premiere-couleur to-box-deuxieme-couleur p-3 w-[30%] rounded-[40px] text-center" href="add-shemma.html">Add</a>
-  </div>
-
-  <div class="flex justify-center w-[70%]">
-    <h1 class="text-white text-[75px] font-title font-bold [text-shadow:_0_14px_20px_rgb(0_0_0_/_0.8)]">
-      < HASARD<span class="text-[#9B5EBF]">404 /></span>
-    </h1>
-  </div>
-  </header>
-
-  <div class="flex justify-center h-[100px] items-center mt-4">
-  <button id="addDiv" class="text-center font-title font-bold border-[0.1px] border-opacity-[50%] shadow-xl hover:stroke-white hover:border-white shadow-stroke-color-opacity border-white text-white bg-gradient-to-r from-box-premiere-couleur to-box-deuxieme-couleur p-3 w-[3%] rounded-[40px]">+</button>
-</div>
-
-  <main class="w-100 h-[600px] flex justify-center gap-10 items-center pt-[6rem]">
-    <!-- Contient absolument tout le site -->
-
-    <div id="placeStudent" class="w-[60%] justify-center">
-
-        
-
-    </div>
-</div>
-
-
-
-    <!-- Partie qui contient la liste -->
-
-    <article 
-      class="w-[300px] flex-col justify-center items-center flex shadow-xl h-[700px] border-opacity-[20%] border-white border-[0.1px] rounded-[10px] bg-gradient-to-r from-box-premiere-couleur to-box-deuxieme-couleur opacity-[1] blur-[0.5px]">
-      <div class="w-100% h-[90%] pt-5 gap-3">
-
-        <ol id="listOl" class="flex flex-col gap-3 items-center">
-          <li id=""></li>
-
-        <ol id="list" class="flex flex-col gap-1 items-center text-white">
-          
-       </ol>
+  <body class="bg-bg-body bg-cover bg-no-repeat">
+    <header class="flex w-[70%] mt-[4%] items-center">
+      <div class="flex ml-4 gap-3 w-[40%]">
+        <a
+          class="font-title font-bold border-[0.1px] border-opacity-[50%] shadow-xl hover:stroke-white hover:border-white shadow-stroke-color-opacity border-stroke-color text-white bg-gradient-to-r from-box-premiere-couleur to-box-deuxieme-couleur p-3 rounded-[40px] text-center"
+          href="index.html"
+          >Promotion 4</a
+        >
+        <a
+          class="font-title font-bold border-[0.1px] border-opacity-[50%] shadow-xl hover:stroke-white hover:border-white shadow-stroke-color-opacity border-white text-white bg-gradient-to-r from-box-premiere-couleur to-box-deuxieme-couleur p-3 w-[30%] rounded-[40px] text-center"
+          href="add-shemma.html"
+          >Add</a
+        >
       </div>
-      <div class="w-[79%] h-[40px] flex gap-[5px]">
-        <div class="w-[70%] h-[10%] flex flex-col">
-          <input
-            class="p-2 rounded-[15px] border-[0.1px] border-opacity-[50%] shadow-xl shadow-stroke-color-opacity border-stroke-color placeholder:text-[15px] placeholder:italic bg-color-button placeholder-white text-white"
-            id="studentInput" maxlength="11" placeholder="Noter un nom" type="text">
+
+      <div class="flex justify-center w-[70%]">
+        <h1
+          class="text-white text-[75px] font-title font-bold [text-shadow:_0_14px_20px_rgb(0_0_0_/_0.8)]"
+        >
+          < HASARD<span class="text-[#9B5EBF]">404 /></span>
+        </h1>
+      </div>
+    </header>
+
+    <div class="flex justify-center h-[100px] items-center mt-4">
+      <button
+        id="addDiv"
+        class="text-center font-title font-bold border-[0.1px] border-opacity-[50%] shadow-xl hover:stroke-white hover:border-white shadow-stroke-color-opacity border-white text-white bg-gradient-to-r from-box-premiere-couleur to-box-deuxieme-couleur p-3 w-[3%] rounded-[40px]"
+      >
+        +
+      </button>
+    </div>
+
+    <main
+      class="w-100 h-[600px] flex justify-center gap-10 items-center pt-[6rem]"
+    >
+      <!-- Contient absolument tout le site -->
+
+      <div
+        id="placeStudent"
+        class="h-[600px] flex w-[60%] justify-center relative overflow-hidden"
+      >
+    
+    
+    </div>
+
+      <!-- Partie qui contient la liste -->
+
+      
+
+      <article
+        class="w-[300px] h-[600px] flex-col justify-center items-center flex shadow-xl  border-opacity-[20%] border-white border-[0.1px] rounded-[10px] bg-gradient-to-r from-box-premiere-couleur to-box-deuxieme-couleur opacity-[1] blur-[0.5px]"
+      >
+        <div class="w-100% h-[90%] pt-5 gap-3">
+          <ol
+            id="list"
+            class="flex flex-col gap-1 items-center text-white"
+          ></ol>
         </div>
-        <div class="flex">
-          <button
-          id="enter" type="button" class="p-2 w-full rounded-[10px] border-[0.1px] border-opacity-[50%] shadow-xl shadow-stroke-color-opacity border-stroke-color bg-color-button text-white">
-            Entrez
-          </button>
+        <div class="w-[79%] h-[40px] flex gap-[5px]">
+          <div class="w-[70%] h-[10%] flex flex-col">
+            <input
+              class="p-2 rounded-[15px] border-[0.1px] border-opacity-[50%] shadow-xl shadow-stroke-color-opacity border-stroke-color placeholder:text-[15px] placeholder:italic bg-color-button placeholder-white text-white"
+              id="studentInput"
+              maxlength="11"
+              placeholder="Noter un nom"
+              type="text"
+            />
+          </div>
+          <div class="flex">
+            <button
+              id="enter"
+              type="button"
+              class="p-2 w-full rounded-[10px] border-[0.1px] border-opacity-[50%] shadow-xl shadow-stroke-color-opacity border-stroke-color bg-color-button text-white"
+            >
+              Entrez
+            </button>
+          </div>
         </div>
-        </div>
+      </article>
 
-    </article>
+      <!-- Div qui contient le tableau et la liste -->
+    </main>
 
-    <!-- Div qui contient le tableau et la liste -->
-  </main>
-
-  <!-- partie btn générer -->
-  <div class="flex justify-center p-9">
-    <a id="buttonGenerer" href="#"
-      class="font-title font-bold border-[0.1px] border-opacity-[50%] shadow-xl shadow-stroke-color-opacity border-stroke-color text-white bg-[#151515] p-3 w-[14%] rounded-[40px] text-center">Génerer</a>
-  </div>
-  <!-- fin de code -->
-</body>
-
+    <!-- partie btn générer -->
+    <div class="flex justify-center p-9">
+      <a
+        id="buttonGenerer"
+        href="#"
+        class="font-title font-bold border-[0.1px] border-opacity-[50%] shadow-xl shadow-stroke-color-opacity border-stroke-color text-white bg-[#151515] p-3 w-[14%] rounded-[40px] text-center"
+        >Génerer</a
+      >
+    </div>
+    <!-- fin de code -->
+  </body>
 </html>
