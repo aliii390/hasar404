@@ -1,6 +1,9 @@
 const inputNom = document.getElementById("studentInput");
 const btnEntrez = document.getElementById("enter");
 const listeNom = document.getElementById("list");
+const btnRemove = document.getElementById("btnRemove")
+
+
 // const listeLi = document.getElementById("listLi")
 // code ALI
 let tableau = [];
@@ -9,8 +12,21 @@ let mesPlace = document.querySelectorAll("#placeStudent > div > article > p")
 let count = 0;
 
 
+
 btnEntrez.addEventListener("click", handleSubmit);
 buttonForGenerate.addEventListener("click", handleOnClickAleatoirePlacement)
+
+
+// function pour remove les li grace au btn test
+ const btnTest = document.getElementById("btnTest");
+ btnTest.addEventListener("click", handleRemove);
+
+ function handleRemove(){
+  listeNom.removeChild(listeNom.firstElementChild)
+ }
+
+ 
+// fin du code pour remove
 
 
 function handleSubmit() {
@@ -22,10 +38,23 @@ function handleSubmit() {
 
   let newLi = document.createElement("li");
   newLi.innerText = textt;
+  
+  
+  // let newBtn = document.createElement("button");
+  // console.log(newBtn);
+  // newBtn.innerHTML = textt;
+
+  
+  
+  
+  
+
 
 
  listeNom.appendChild(newLi);
   inputNom.value = '';
+
+  // listeNom.remove();
 
   
 
