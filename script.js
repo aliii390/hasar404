@@ -18,14 +18,15 @@ buttonForGenerate.addEventListener("click", handleOnClickAleatoirePlacement)
 
 
 // function pour remove les li grace au btn test
+
  const btnTest = document.getElementById("btnTest");
  btnTest.addEventListener("click", handleRemove);
 
  function handleRemove(){
-  listeNom.removeChild(listeNom.firstElementChild)
+  listeNom.removeChild(listeNom.lastChild)
  }
 
- 
+
 // fin du code pour remove
 
 
@@ -35,33 +36,25 @@ function handleSubmit() {
 
   tableau.push(textt);
 
-
   let newLi = document.createElement("li");
   newLi.innerText = textt;
   
-  
-  // let newBtn = document.createElement("button");
-  // console.log(newBtn);
-  // newBtn.innerHTML = textt;
-
-  
-  
-  
-  
-
-
 
  listeNom.appendChild(newLi);
   inputNom.value = '';
-
-  // listeNom.remove();
-
   
 
   console.log(tableau);
   
 }
 // FIN DE CODE ALI
+
+
+
+
+
+
+
 
 
 
